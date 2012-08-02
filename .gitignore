@@ -1,0 +1,11 @@
+.bundle
+.DS_Store
+.rbenv-version
+.rvmrc
+.yardoc
+challah-*.gem
+coverage/
+doc/
+log/*.log
+tmp/
+vendor/bundle

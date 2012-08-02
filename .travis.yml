@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - 1.9.2
+  - 1.9.3
+script: bundle exec rake test
+branches:
+  only:
+    - master
+gemfile:
+  - Gemfile
+  - gemfiles/rails3_1.gemfile
+  - gemfiles/rails3_2.gemfile
+  - gemfiles/rails3_2_3.gemfile
