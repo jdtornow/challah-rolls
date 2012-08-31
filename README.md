@@ -15,27 +15,21 @@ Challah (pronounced HAH-lah) Rolls is an extension to the [Challah](http://githu
 
 ## Installation
 
+    gem install challah
     gem install challah-rolls
 
 Or, in your `Gemfile`
 
+    gem 'challah', '>= 0.8'
     gem 'challah-rolls'
 
 ## Set up
 
 Once the gem has been set up and installed, run the following command to set up the database migrations:
 
-    rake challah:setup:rolls
+    rake challah:rolls:setup
 
 This will copy over the necessary migrations to your app, migrate the database and add some seed data. You will be prompted to add the first user as the last step in this process.
-
-### Manual set up
-
-If you would prefer to handle these steps manually, you can do so by using these rake tasks instead:
-
-    rake challah:setup:rolls
-    rake db:migrate
-    rake challah:setup:rolls:seeds
 
 ### Creating permissions and roles
 
