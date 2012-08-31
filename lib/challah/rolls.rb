@@ -2,14 +2,12 @@ require 'challah/rolls/version'
 
 module Challah
   module Rolls
-    autoload :AuthablePermissionRole,           'challah/rolls/authable/permission_role'
-    autoload :AuthablePermissionUser,           'challah/rolls/authable/permission_user'
-    autoload :AuthablePermission,               'challah/rolls/authable/permission'
-    autoload :AuthableRole,                     'challah/rolls/authable/role'
-    autoload :AuthableUser,                     'challah/rolls/authable/user'
+    autoload :PermissionRole,                   'challah/rolls/permission_role'
+    autoload :PermissionUser,                   'challah/rolls/permission_user'
+    autoload :Permission,                       'challah/rolls/permission'
+    autoload :Role,                             'challah/rolls/role'
+    autoload :User,                             'challah/rolls/user'
 
     autoload :Controller,                       'challah/rolls/controller'
   end
 end
-
-require 'challah/rolls/railtie' if defined?(Rails)

@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'challah', '0.7.0.pre', :path => '~/src/jdtornow/challah'
+gem 'challah', :path => '~/src/jdtornow/challah'
 
 gemspec
 

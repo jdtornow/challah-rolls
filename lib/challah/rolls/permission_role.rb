@@ -1,6 +1,6 @@
 module Challah::Rolls
-  module AuthablePermissionRole
-    def authable_permission_role
+  module PermissionRole
+    def challah_permission_role
       class_eval do
         validates_presence_of :permission_id, :role_id
         validates_numericality_of :permission_id, :role_id

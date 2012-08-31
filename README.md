@@ -1,17 +1,17 @@
 # Challah Rolls
 
-[![Build Status](https://secure.travis-ci.org/jdtornow/challah.png)](http://travis-ci.org/jdtornow/challah-rolls) [![Dependency Status](https://gemnasium.com/jdtornow/challah.png?travis)](https://gemnasium.com/jdtornow/challah-rolls)
+[![Build Status](https://secure.travis-ci.org/jdtornow/challah-rolls.png)](http://travis-ci.org/jdtornow/challah-rolls) [![Dependency Status](https://gemnasium.com/jdtornow/challah-rolls.png?travis)](https://gemnasium.com/jdtornow/challah-rolls)
 
 Challah (pronounced HAH-lah) Rolls is an extension to the [Challah](http://github.com/jdtornow/challah) gem that brings basic authorization support in the form of user roles and permissions.
 
-** Note: Prior to Challah v0.7.0, this functionality was baked in to the main gem. Since then, the roles and permissions are included into this extension instead. **
+** Note: Prior to Challah v0.8, this functionality was baked in to the main gem. Since then, the roles and permissions are included into this extension instead. **
 
 ## Requirements
 
 * Ruby 1.9.2+
 * Bundler
 * Rails 3.1+
-* Challah Gem 0.7+
+* Challah Gem 0.8+
 
 ## Installation
 

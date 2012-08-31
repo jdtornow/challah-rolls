@@ -4,6 +4,6 @@ class Role < ActiveRecord::Base
   #
   # For a list of all methods included into Role, see:
   #
-  # http://rubydoc.info/gems/challah
-  authable_role
+  # http://rubydoc.info/gems/challah-rolls
+  challah_role
 end

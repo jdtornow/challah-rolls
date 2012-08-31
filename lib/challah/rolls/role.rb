@@ -28,8 +28,8 @@ module Challah::Rolls
   #
   # The following associations are set on this model by default:
   #
-  # * Has many *users* (connects to {AuthableUser User})
-  # * Has many *permissions* (connects to {AuthablePermission Permission})
+  # * Has many *users*
+  # * Has many *permissions*
   #
   # The join table (permission_roles) is also included, but likely does not need to be
   # accessed directly.
@@ -47,14 +47,14 @@ module Challah::Rolls
   #
   #     # Your customizations here..
   #   end
-  module AuthableRole
+  module Role
     # This method sets up the +Role+ class with all baked in methods.
     #
     # A role requires the presence of the +name+ and +default_path+ attributes.
     #
     # Once this method has been called, the {InstanceMethods} and {ClassMethods} modules
     # will be accessibile within the Role model.
-    def authable_role
+    def challah_role
       unless included_modules.include?(InstanceMethods)
         include InstanceMethods
         extend ClassMethods

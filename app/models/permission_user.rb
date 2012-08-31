@@ -1,3 +1,3 @@
 class PermissionUser < ActiveRecord::Base
-  authable_permission_user
+  challah_permission_user
 end

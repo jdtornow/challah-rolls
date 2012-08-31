@@ -4,6 +4,6 @@ class Permission < ActiveRecord::Base
   #
   # For a list of all methods included into Permission, see:
   #
-  # http://rubydoc.info/gems/challah
-  authable_permission
+  # http://rubydoc.info/gems/challah-rolls
+  challah_permission
 end

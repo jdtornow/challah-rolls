@@ -1,5 +1,5 @@
 module Challah::Rolls
-  # AuthablePermission is used to extend functionality to a model in your app named Permission.
+  # Permission is used to extend functionality to a model in your app named Permission.
   # By default, this model already exists within the challah engine.
   #
   # The Permission model is used to store every granular level of restriction for your application.
@@ -45,14 +45,14 @@ module Challah::Rolls
   #
   #     # Your customizations here..
   #   end
-  module AuthablePermission
+  module Permission
     # This method sets up the +Permission+ class with all baked in methods.
     #
     # A permission requires the presence of the +name+, +key+ and +description+
     #
     # Once this method has been called, the {InstanceMethods} module
     # will be accessibile within the Permission model.
-    def authable_permission
+    def challah_permission
       unless included_modules.include?(InstanceMethods)
         include InstanceMethods
         extend ClassMethods

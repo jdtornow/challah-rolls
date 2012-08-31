@@ -1,3 +1,3 @@
 class PermissionRole < ActiveRecord::Base
-  authable_permission_role
+  challah_permission_role
 end

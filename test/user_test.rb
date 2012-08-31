@@ -81,10 +81,10 @@ class UserTest < ActiveSupport::TestCase
 
   context "A user instance" do
     should "have a default_path where this user will be sent upon login" do
-      role = Role.new
+      role = ::Role.new
       role.stubs(:default_path).returns('/role-path')
 
-      user = User.new
+      user = ::User.new
 
       user.stubs(:role).returns(role)
       assert_equal '/role-path', user.default_path
@@ -98,7 +98,7 @@ class UserTest < ActiveSupport::TestCase
 
       user = build(:user)
 
-      user.stubs(:role).returns(Role.new)
+      user.stubs(:role).returns(::Role.new)
       user.role.stubs(:permission_keys).returns([])
 
       user.save
