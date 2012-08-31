@@ -1,7 +1,5 @@
 source :rubygems
 
-gem 'challah', :path => '~/src/jdtornow/challah'
-
 gemspec
 
 group :test do

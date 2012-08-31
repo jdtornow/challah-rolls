@@ -10,13 +10,13 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.authors       = ["John Tornow"]
   s.email         = ["john@johntornow.com"]
-  s.homepage      = "http://github.com/jdtornow/challah"
-  s.summary       = "Simple authentication and authorization gem for Rails."
-  s.description   = %Q{A simple Rails engine gem for authentication, authorization, users, roles and permissions.}
+  s.homepage      = "http://github.com/jdtornow/challah-rolls"
+  s.summary       = "Authorization extension for Challah and Rails."
+  s.description   = %Q{A Challah plugin for basic roles and permissions in your Rails app.}
   s.files         = Dir.glob("{app,config,db,test,lib,vendor}/**/*") + %w(README.md CHANGELOG.md)
   s.require_paths = ["lib"]
 
-  s.add_dependency 'challah', '>= 0.7.0.pre'
+  s.add_dependency 'challah', '>= 0.8.0.pre'
   s.add_dependency 'highline'
   s.add_dependency 'rails', '>= 3.1'
   s.add_dependency 'rake', '>= 0.9.2'
