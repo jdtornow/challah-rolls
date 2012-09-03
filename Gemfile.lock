@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    challah-rolls (0.1.0)
+    challah-rolls (0.1.1)
       bcrypt-ruby
-      challah (>= 0.8.0.pre)
+      challah (>= 0.8.0)
       highline
       rails (>= 3.1)
       rake (>= 0.9.2)
@@ -41,7 +41,7 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
-    challah (0.8.0.pre)
+    challah (0.8.0)
       bcrypt-ruby
       highline
       rails (>= 3.1)

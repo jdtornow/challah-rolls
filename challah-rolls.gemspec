@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files         = Dir.glob("{app,config,db,test,lib,vendor}/**/*") + %w(README.md CHANGELOG.md)
   s.require_paths = ["lib"]
 
-  s.add_dependency 'challah', '>= 0.8.0.pre'
+  s.add_dependency 'challah', '>= 0.8.0'
   s.add_dependency 'highline'
   s.add_dependency 'rails', '>= 3.1'
   s.add_dependency 'rake', '>= 0.9.2'
