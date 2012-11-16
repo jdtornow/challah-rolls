@@ -29,15 +29,6 @@ module Challah
           ################################################################
 
           after_save          :save_permission_keys
-
-          # Attributes
-          ################################################################
-
-          protect_attributes  :permission_users_attributes,
-                              :permission_users,
-                              :permissions_attributes,
-                              :permissions,
-                              :role_id
         end
       end
 

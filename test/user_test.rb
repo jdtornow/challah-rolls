@@ -93,6 +93,18 @@ class UserTest < ActiveSupport::TestCase
       assert_equal '/', user.default_path
     end
 
+    should "not mass assign permissions or roles" do
+      user = create(:user)
+
+      assert_raise ActiveModel::MassAssignmentSecurity::Error do
+        user.update_attributes(:role_id => 2)
+      end
+
+      assert_raise ActiveModel::MassAssignmentSecurity::Error do
+        user.update_attributes(:permission_keys => %w( admin ))
+      end
+    end
+
     should "get and set permission keys" do
       %w( run pass throw block ).each { |p| create(:permission, :key => p) }
 
