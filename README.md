@@ -148,12 +148,6 @@ Whichever method you use will yield the same results. Just make sure you are che
 
 Documentation is available at: [http://rubydoc.info/gems/challah-rolls](http://rubydoc.info/gems/challah-rolls/frames)
 
-## Example App
-
-A fully-functional example app, complete with some basic tests, is available at [http://challah-example.herokuapp.com/](http://challah-example.herokuapp.com/).
-
-The source code to the example is available at [https://github.com/jdtornow/challah-example](https://github.com/jdtornow/challah-example).
-
 ### Issues
 
 If you have any issues or find bugs running Challah Rolls, please [report them on Github](https://github.com/jdtornow/challah-rolls/issues). While most functions should be stable, Challah is still in its infancy and certain issues may be present.
